@@ -7,6 +7,7 @@ CREATE TABLE `data_platform_equipment_master_business_partner_data`
     `ValidityStartDate`          date NOT NULL,
     `ValidityEndDate`            date NOT NULL,
     `CreationDate`               date NOT NULL,
+    `LastChangeDate`             date NOT NULL,
     `IsMarkedForDeletion`        tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Equipment`, `EquipmentPartnerObjectNmbr`),

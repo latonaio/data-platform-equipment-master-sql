@@ -4,8 +4,8 @@ CREATE TABLE `data_platform_equipment_master_owner_business_partner_data`
   	`OwnerBusinessPartner`     int(12) NOT NULL,
     `ValidityStartDate`        date NOT NULL,
     `ValidityEndDate`          date NOT NULL,
-    `CreationDate`             date DEFAULT NULL,
-    `BusinessPartnerEquipment` int(20) DEFAULT NULL,
+    `CreationDate`             date NOT NULL,
+    `LastChangeDate`           date NOT NULL,
     `IsMarkedForDeletion`      tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Equipment`, `OwnerBusinessPartner`, `ValidityStartDate`, `ValidityEndDate`),
